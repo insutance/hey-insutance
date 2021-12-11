@@ -1,5 +1,5 @@
 ## hey-insutance
-저에 대한 정보를 출력해서 볼 수 있는 패키지입니다.
+insutance에 대한 정보를 알려주는 패키지.
 
 ### Getting Started
 
