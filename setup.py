@@ -3,8 +3,10 @@ from setuptools import setup, find_packages
 
 setup(
     name="insutance",
-    version="0.0.1",
+    version="0.0.2",
     description="Hey insutance! Who are you?",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     author="insutance",
     author_email="insutance@naver.com",
     url="https://github.com/insutance/hey-insutance",
