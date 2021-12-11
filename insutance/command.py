@@ -14,5 +14,11 @@ class CommandParser:
         "insutance",
         help="what do you want to know about me?"
     )
-    insutance_parser.add_argument("question", nargs="?", help="write the question")
+    options_group = insutance_parser.add_mutually_exclusive_group(required=True)
+    options_group.add_argument("--name", action="store_true", help=f"이름이 뭔가요?")
+    options_group.add_argument("--age", action="store_true", help=f"몇 살이에요?")
+    options_group.add_argument("--github", action="store_true", help=f"Github 주소가 뭐에요?")
+    options_group.add_argument("--blog", action="store_true", help=f"Blog 주소는 뭐에요?")
+    options_group.add_argument("--job", action="store_true", help=f"어떤 일을 하시죠?")
+
     return self.parser.parse_args()
