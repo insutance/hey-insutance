@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="insutance",
-    version="0.0.2",
+    version="0.0.3",
     description="Hey insutance! Who are you?",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
